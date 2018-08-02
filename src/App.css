@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+}
+
+.App {
+    text-align: center;
+    background-color: #f3f7fa;
+    height: 100%;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: stretch;
+}
+
+.left-column {
+    width: 20%;
+    background-color: #f3f7fa;
+}
+
+.valuta span {
+    /* Style for "КОЛИЧЕСТВО" */
+    width: 167px;
+    height: 22px;
+    color: #4a4a4a;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 19px;
+    /* Text style for "КОЛИЧЕСТВО" */
+    letter-spacing: 0.5px;
+    padding: 5px;
+
+}
+
+.valuta {
+    width: 90%;
+    color: #2196f3;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 22px;
+    text-transform: uppercase;
+    /* Text style for "USD" */
+    letter-spacing: 0.5px;
+    background-color: #ffffff;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.filter{
+    width: 90%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 22px;
+    text-transform: uppercase;
+    /* Text style for "USD" */
+    letter-spacing: 0.5px;
+    background-color: #ffffff;
+    margin: 20px auto;
+    text-align: left;
+}
+.valuta-select {
+    display: flex;
+    height: 40px;
+    border-radius: 0 5px 5px 0;
+    border: 1px solid #d2d5d6;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.valuta-select-elem {
+    width: 33%;
+    height: 40px;
+    line-height: 40px;
+    /*border: 1px solid #d2d5d6;*/
+    background-color: #ffffff;
+}
+
+.valuta-select-elem:hover {
+    color: #2196f3;
+    background-color: #f2fcff;
+}
+
+.valuta-active {
+    background-color: #2196f3;
+    color: #ffffff;
+}
+
+.right-column {
+    width: 80%;
+    background-color: #f3f7fa;
+    overflow: scroll;
+}
+
+.App-logo {
+    /* Style for "Logo" */
+    width: 60px;
+    height: 61px;
+
+}
+
+.App-header {
+    background-color: #f3f7fa;
+    height: 150px;
+    padding: 20px;
+    color: white;
+}
+
+.App-title {
+    font-size: 1.5em;
+}
+
+.App-intro {
+    font-size: large;
+}
+
+.ticket{
+    width: 80%;
+    height: 200px;
+    display: flex;
+    background-color: #ffffff;
+    margin: 20px auto;
+}
+.ticket__left{
+    width: 30%;
+    background-color: white;
+}
+.ticket__right{
+    width: 70%;
+    background-color: white;
+    display: flex;
+}
+.ticket__button{
+    /* Style for "Rectangle" */
+    width: 160px;
+    height: 56px;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1), 0 1px 0 #d64d08;
+    border-radius: 5px;
+    background-color: #ff6d00;
+    color: #ffffff;
+    font-size: 16px;
+    /* Text style for "Купить  за" */
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    outline: none;
+}
+.ticket__button label{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.ticket__right--from,
+.ticket__right--to,
+.ticket__right--arrow{
+    flex-grow: 1;
+    padding-top: 25px;
+}
+.ticket__right--from{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.ticket__right--to{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 20px;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    margin: 10px 0 0 20px;
+}
+.checkbox + label {
+    position: relative;
+    padding: 0 0 0 60px;
+    cursor: pointer;
+}
+.checkbox + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    /* Style for "Rectangle" */
+    width: 19px;
+    height: 19px;
+    border-radius: 3px;
+    border: 1px solid #2196f3;
+    background-color: #ffffff;
+}
+
+.checkbox:checked + label:before {
+    content: '✓';
+    color: #2196f3;
+    background-color: #f2fcff;
+    padding-left: 5px;
+    width: 14px;
+}
+
+.checkbox:focus + label:before {
+    box-shadow: inset 0 2px 3px rgba(0,0,0,.2), 0 0 0 3px rgba(255,255,0,.7);
+}
+
+.ticket__time{
+    /* Style for "09:25" */
+    width: 82px;
+    height: 34px;
+    color: #4a4a4a;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    line-height: 26px;
+}
+.ticket__dist{
+    font-family: 'Open Sans', sans-serif;
+    color: #4a4a4a;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 600;
+}
+
+.ticket__dist--under{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 600;
+    color: #8b9497;
+}
+
