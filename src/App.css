@@ -191,41 +191,59 @@ body {
         transform: rotate(360deg);
     }
 }
-
-.checkbox {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
-    margin: 10px 0 0 20px;
-}
-.checkbox + label {
-    position: relative;
-    padding: 0 0 0 60px;
-    cursor: pointer;
-}
-.checkbox + label:before {
-    content: '';
-    position: absolute;
-    left: 0;
+.checkbox{
+    -webkit-appearance: none;
     /* Style for "Rectangle" */
     width: 19px;
     height: 19px;
     border-radius: 3px;
     border: 1px solid #2196f3;
-    background-color: #ffffff;
+    background-color: white;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+.checkbox:checked{
+
+    background:url("./img/galka_32.png") no-repeat center #f2fcff;
+}
+.checkbox__container{
+
 }
 
-.checkbox:checked + label:before {
-    content: '✓';
-    color: #2196f3;
-    background-color: #f2fcff;
-    padding-left: 5px;
-    width: 14px;
-}
+/*.checkbox {*/
+    /*position: absolute;*/
+    /*z-index: -1;*/
+    /*opacity: 0;*/
+    /*margin: 10px 0 0 20px;*/
+/*}*/
+/*.checkbox + label {*/
+    /*position: relative;*/
+    /*padding: 0 0 0 60px;*/
+    /*cursor: pointer;*/
+/*}*/
+/*.checkbox + label:before {*/
+    /*content: '';*/
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*!* Style for "Rectangle" *!*/
+    /*width: 19px;*/
+    /*height: 19px;*/
+    /*border-radius: 3px;*/
+    /*border: 1px solid #2196f3;*/
+    /*background-color: #ffffff;*/
+/*}*/
 
-.checkbox:focus + label:before {
-    box-shadow: inset 0 2px 3px rgba(0,0,0,.2), 0 0 0 3px rgba(255,255,0,.7);
-}
+/*.checkbox:checked + label:before {*/
+    /*content: '✓';*/
+    /*color: #2196f3;*/
+    /*background-color: #f2fcff;*/
+    /*padding-left: 5px;*/
+    /*width: 14px;*/
+/*}*/
+
+/*.checkbox:focus + label:before {*/
+    /*box-shadow: inset 0 2px 3px rgba(0,0,0,.2), 0 0 0 3px rgba(255,255,0,.7);*/
+/*}*/
 
 .ticket__time{
     /* Style for "09:25" */

@@ -11,7 +11,7 @@ class StopFilter extends React.Component {
             <div className="filter">
                 <span>КОЛЛИЧЕСТВО ПЕРЕСАДОК</span>
                 <div>
-                    <div>
+                    <div className="checkbox__container">
                         <input type="checkbox" name="checkAll" id="checkAll"
                                onChange={this.handleCheckClick}
                                checked={this.props.check.checkAll}
